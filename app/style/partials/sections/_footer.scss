@@ -1,0 +1,127 @@
+.main-footer {
+  position: relative;
+  padding-bottom: 40px;
+  text-align: center;
+  // padding-bottom: 117px;
+  background-image: url(../img/lines-bg.jpg);
+  background-color: #00accc;
+  background-repeat: no-repeat;
+  background-position:0 100%;
+  p {
+    position: relative;
+    bottom: 100px;
+    max-width: 690px;
+    margin: auto;
+    margin-top: 45px;
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 5;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: -226px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ellipse_footer.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+.main-footer__soc-list {
+  position: relative;
+  bottom: 117px;
+  // padding: 16px 0;
+  // box-shadow: 0 1px 7px #777;
+
+}
+.soc-list__item {
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-image: url("../img/soc-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 20px;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    &:nth-of-type(n + 2) {
+      margin-left: 30px;
+    }
+
+    &:nth-of-type(1) {
+        background-position: 0 0;
+    }
+
+    &:nth-of-type(2) {
+        background-position: -139px 0;
+    }
+
+    &:nth-of-type(3) {
+        background-position: -271px 0;
+    }
+    &:nth-of-type(4) {
+        background-position: -404px 0;
+    }
+}
+@media screen and (max-width: 630px) {
+  .main-footer {
+    padding-bottom: 30px;
+    &:after {
+      top: -6px;
+      left: 0;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-footer {
+    padding-bottom: 20px;
+    &:after {
+      top: 16px;
+      left: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .soc-list__item {
+    width: 45px;
+    height: 45px;
+    &:nth-of-type(1) {
+        background-position: 0 0;
+    }
+
+    &:nth-of-type(2) {
+        background-position: -74px 0;
+    }
+
+    &:nth-of-type(3) {
+        background-position: -147px 0;
+    }
+    &:nth-of-type(4) {
+        background-position: -219px 0;
+    }
+  }
+}

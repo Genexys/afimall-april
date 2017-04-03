@@ -1,0 +1,365 @@
+.take-gift {
+    position: relative;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+    background-color: #00accc;
+    // background-image: url("../img/points-bg.png");
+    // background-size: cover;
+    background-position: 0 -431px;
+    background-repeat: no-repeat;
+
+    h1 {
+        margin-bottom: 50px;
+        color: #fff;
+        font-size: 38px;
+        font-family: HelveticaNeueCyr-Bold, sans-serif;
+        font-weight: bold;
+    }
+}
+
+.take-gift__list {
+    position: relative;
+    max-width: 640px;
+    margin: auto;
+    padding-left: 72px;
+    text-align: left;
+    color: #fff;
+    font-size: 26px;
+    z-index: 20;
+    li {
+        position: relative;
+        font-family: HelveticaNeueCyrRoman, sans-serif;
+        letter-spacing: 0.02rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: -12%;
+            display: block;
+            height: 51px;
+            width: 51px;
+            border-radius: 100%;
+            background-color: #fff;
+            color: #00accc;
+            text-align: center;
+            line-height: 51px;
+            font-size: 25px;
+            font-family: RobotoBold, sans-serif;
+        }
+
+        &:nth-child(1) {
+            &:before {
+                content: '1';
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 28px;
+
+            &:before {
+                content: '2';
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 164px;
+
+            &:before {
+                content: '3';
+                top: -14px;
+            }
+        }
+
+        &:nth-child(4) {
+            margin-top: 25px;
+
+            &:before {
+                content: '4';
+                top: 1px;
+            }
+        }
+    }
+}
+
+.take-gift__btn {
+    position: absolute;
+    top: 485px;
+    left: 0;
+    width: 100%;
+    height: 183px;
+
+    a {
+        height: 100px;
+        width: 49%;
+        display: inline-block;
+        margin-top: 38px;
+        background-color: #fff;
+        box-shadow: 1px 5px 0 #268dab;
+    }
+
+    .apple-btn {
+        float: left;
+        border-bottom-right-radius: 200px;
+        border-top-right-radius: 200px;
+
+        img {
+            float: right;
+            margin-top: 20px;
+            margin-right: 80px;
+        }
+    }
+
+    .google-btn {
+        float: right;
+        border-bottom-left-radius: 200px;
+        border-top-left-radius: 200px;
+
+        img {
+            float: left;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+    }
+}
+
+.take-gift__about {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    background-image: url("../img/ellipse-btn.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 2;
+    p {
+        font-size: 26px;
+        font-family: HelveticaNeueCyr-Bold, sans-serif;
+        color: #1c6b7f;
+        text-decoration: underline;
+    }
+}
+
+.take-gift__bnt-doc {
+    display: block;
+    max-width: 262px;
+    height: 46px;
+    margin: 20px auto auto;
+    border-radius: 200px;
+    box-shadow: 1px 5px 0 #268dab;
+    background-color: #2db8ca;
+    font-size: 26px;
+    line-height: 46px;
+    font-family: HelveticaNeueCyr-Bold, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: all 2s ease;
+
+    &:active,
+    &:hover {
+        box-shadow: inset 1px 5px 0 #268dab;
+    }
+}
+
+.take-gift__video {
+    height: 300px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+.take-gift__gift {
+  position: absolute;
+  right: 0;
+  bottom: 300px;
+  z-index: 0;
+}
+@media screen and (max-width: 610px) {
+    .take-gift__btn {
+        top: 428px;
+    }
+
+    .take-gift__list {
+        font-size: 20px;
+    }
+
+    .take-gift__btn {
+        .apple-btn {
+            img {
+                margin-right: 20px;
+            }
+        }
+
+        .google-btn {
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+  // .take-gift {
+  //   background-position: 72% -74px;
+  // }
+    .take-gift__list {
+      li {
+        &::before {
+          left: -12%;
+          height: 40px;
+          width: 40px;
+          font-size: 18px;
+          line-height: 40px;
+        }
+      }
+    }
+    .take-gift__btn {
+        top: 444px;
+    }
+}
+@media screen and (max-width: 518px) {
+    .take-gift {
+        padding-top: 140px;
+        // background-position: 73% 127px;
+        // background-size: 500px;
+        h1 {
+            font-size: 22px;
+        }
+    }
+    .take-gift__list {
+        font-size: 16px;
+        li {
+          &:nth-child(2) {
+            &::before {
+              top: 6px;
+            }
+          }
+        }
+    }
+    .take-gift__btn {
+        top: 335px;
+
+        a {
+            height: 76px;
+        }
+    }
+
+    .take-gift__btn {
+        .apple-btn {
+            img {
+                width: 150px;
+                margin-right: 20px;
+            }
+        }
+
+        .google-btn {
+            img {
+                width: 150px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 442px) {
+  .take-gift {
+    background-position: 73% 157px;
+  }
+    .take-gift__list {
+      li {
+        &::before {
+          left: -18%;
+        }
+      }
+    }
+    .take-gift__btn {
+        top: 350px;
+    }
+    .take-gift__gift {
+      bottom: 380px;
+      width: 170px;
+    }
+}
+@media screen and (max-width: 394px) {
+
+    .take-gift__btn {
+        top: 365px;
+    }
+}
+@media screen and (max-width: 392px) {
+  .take-gift {
+    // background-position: 73% 177px;
+  }
+    .take-gift__list {
+      li {
+        &:nth-child(3) {
+          &::before {
+           top: -2px;
+          }
+        }
+     }
+    }
+
+    .take-gift__btn {
+        top: 365px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .take-gift__list li:nth-child(3) {
+        margin-top: 153px;
+    }
+
+    .take-gift__btn {
+        top: 375px;
+
+        .apple-btn {
+            img {
+                width: 120px;
+            }
+        }
+
+        .google-btn {
+            img {
+                width: 120px;
+            }
+        }
+    }
+
+    .take-gift__about {
+        p {
+            font-size: 21px;
+        }
+
+        .take-gift__bnt-doc {
+            max-width: 238px;
+            height: 42px;
+            font-size: 18px;
+        }
+    }
+}
+// @media screen and (max-width: 394px) {
+//   .take-gift__btn {
+//     top: 400px;
+//   }
+// }
+@media screen and (max-width: 350px) {
+    .take-gift__btn {
+        top: 390px;
+    }
+    .take-gift__list {
+      li {
+        &::before {
+          left: -25%;
+        }
+      }
+    }
+    .take-gift {
+        h1 {
+            font-size: 22px;
+        }
+    }
+
+    .take-gift__list {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,124 @@
+.gift-descr {
+    position: relative;
+    z-index: 999;
+}
+.gift-descr__title {
+  width: 100%;
+  height: 125px;
+  background-color: #00accc;
+  text-align: center;
+  padding: 1px;
+  h2 {
+    display: block;
+    max-width: 555px;
+    margin: 26px auto 0;
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.1;
+    font-family: RobotoRegular, sans-serif;
+  }
+}
+.gift-descr__list {
+    position: relative;
+    padding-top: 26px;
+    list-style: none;
+    text-align: center;
+    -webkit-box-shadow: 0 -4px 30px -2px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 -4px 30px -2px rgba(0,0,0,.4);
+    box-shadow: 0 -4px 30px -2px rgba(0,0,0,.4);
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -155px;
+      width: 100%;
+      height: 170px;
+      background-image: url(../img/ellipse.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      z-index: 1;
+    }
+    li {
+      position: relative;
+        margin-bottom: 58px;
+        font-size: 25px;
+        color: #00accc;
+        font-family: RobotoRegular, sans-serif;
+        line-height: 1.3;
+        z-index: 2;
+        &:first-child {
+          .gift-descr__icon-item {
+            background-position: 0px 10px;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+          .gift-descr__icon-item {
+            background-position: 0px -189px;
+          }
+        }
+    }
+}
+.gift-descr__img-item {
+  width: 100%;
+  height: 53px;
+  margin-bottom: 29px;
+  background-image: url(../img/wave.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+.gift-descr__icon-item {
+  width: 103px;
+  height: 73px;
+  margin: auto;
+  background-image: url(../img/descr-ico.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 588px) {
+  .gift-descr__title {
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .gift-descr__img-item {
+    background-size: 160%;
+  }
+  .gift-descr__list {
+    &:after {
+      bottom: -128px;
+    }
+    li {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .gift-descr__list {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .gift-descr__title {
+    h2 {
+      margin-top: 37px;
+      font-size: 18px;
+    }
+  }
+}
+
+// @media (min-width: 320px) {
+//     .gift-descr__list {
+//         li {
+//             font-size: calc( 1rem + ((2 - 1) * 7) * (100vw - 320px) / (1920 - 320));
+//         }
+//     }
+// }

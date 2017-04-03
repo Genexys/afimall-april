@@ -1,0 +1,124 @@
+@include border-box;
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.main-wrapper {
+  max-width: 768px;
+  margin: auto;
+  overflow: hidden;
+}
+.main-header {
+  position: relative;
+  padding-bottom: 58px;
+  text-align: center;
+  h1 {
+    margin-top: 16px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: RobotoBold, sans-serif;
+    color: #00accc;
+  }
+  p {
+    margin-top: 22px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: RobotoRegular, sans-serif;
+    color: #00accc;
+  }
+}
+.main-logo {
+  float: left;
+  margin-top: 27px;
+  margin-left: 32px;
+  text-align: left;
+  z-index: 6;
+}
+.tiangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 245px;
+  height: 160px;
+}
+.trinagle-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 160px 122.5px 0 122.5px;
+    border-color: #00adcc transparent transparent transparent;
+  }
+}
+.trinagle-text {
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 15px;
+    text-align: center;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 30px;
+    line-height: .9;
+}
+.women {
+  display: inline-block;
+  margin: 34px auto 0;
+  margin-left: 15px;
+}
+.age {
+  position: absolute;
+  bottom: 200px;
+  margin-left: 5px;
+}
+@media all and (max-width: 688px) {
+  .main-header {
+    text-align: center;
+  }
+  .main-logo {
+    margin: 20px;
+  }
+  .main-descr {
+    float: none;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 528px) {
+  .tiangle {
+    width: 158px;
+    height: 100px;
+  }
+  .trinagle-wrapper {
+    &::before {
+      border-width: 100px 80.5px 0 80.5px;
+    }
+  }
+  .trinagle-text {
+      font-size: 20px;
+  }
+  .age {
+    width: 30px;
+    bottom: 230px;
+  }
+}
+@media all and (max-width: 434px) {
+  .tiangle {
+    display: none;
+  }
+  .age {
+    bottom: 300px;
+  }
+}
